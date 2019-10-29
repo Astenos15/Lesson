@@ -3,9 +3,30 @@ body {background-color: black;
 }
 .navbar-brand{color:white}
 
-.nav-link {color:white;
-          font-size: 120%;
+.nav-link {font-size: 120%;
+          color: #fff!important;
+          text-transform: uppercase;
+          text-decoration: none;
 }
+
+ul { 
+    list-style: none; 
+  }
+  li:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  li:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
 
 #jumbo{background-color: white;
        border-radius: 0px;
