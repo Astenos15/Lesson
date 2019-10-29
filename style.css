@@ -1,0 +1,22 @@
+body {background-color: black;
+    font-family: 'Crimson Text', serif;
+}
+.navbar-brand{color:white}
+
+.nav-link {color:white;
+          font-size: 120%;
+}
+
+#jumbo{background-color: white;
+       border-radius: 0px;
+}
+
+#about {
+    font-size: 400%;
+}
+.card-text{font-size: 120%;}
+
+h6{
+    color: blue;
+}
+#contact{color: white!important;}
