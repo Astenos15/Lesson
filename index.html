@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -78,7 +79,7 @@
     <!-- About Us-->
     <div>
         <div id="jumbo" class="jumbotron mb-0">
-            <h6>/ Who we are</h6>
+            <h6 id="who">/ Who we are</h6>
             <h1 id="about" style="margin-bottom: 50px; margin-top: 60px;">We are a group of driven individuals passionate about improving products and creating ideas.</h1>
             <hr class="my-4">
             <h3>Isekai Information Technologies, Inc. is a new IT company that will provide systems for the public and a quality service worldwide. Isekai specialises in business growth consulting, branding and marketing, Web and interface design and technology solution.</h3>
@@ -262,13 +263,50 @@
             </div>  
         </div>
 
+ <!-- <script src="jquery/jquery-3.4.1.js"></script>
+
+ <script>
+  $(document).ready(function() {
+
+    $("#who").on("click", function(){
+      $("#about").toggle();
+    });
 
 
 
+  });
 
-
-
-
+ 
+ </script> -->
+ <script>
+  window.sr = ScrollReveal();
+  sr.reveal('#jumbo', {
+    duration: 3000,
+    origin:'bottom',
+    distance:'300px'
+  });
+  sr.reveal('.navbar', {
+    duration: 3000,
+    origin:'top',
+    distance:'300px'
+  });
+  sr.reveal('#carouselExampleControls', {
+    duration: 3000,
+    origin:'bottom',
+    distance:'300px'
+  });
+  sr.reveal('.cards', {
+    duration: 3000,
+    origin:'bottom',
+    distance:'300px'
+  });
+  window.sr = ScrollReveal();
+  sr.reveal('#contact', {
+    duration: 3000,
+    origin:'bottom',
+    distance:'300px'
+  });
+</script>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

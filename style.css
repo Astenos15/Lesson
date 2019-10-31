@@ -8,6 +8,9 @@ body {background-color: black;
           text-transform: uppercase;
           text-decoration: none;
 }
+.navbar-toggler{
+  background-color:white!important;
+}
 
 ul { 
     list-style: none; 
